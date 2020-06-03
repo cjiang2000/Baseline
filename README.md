@@ -1,0 +1,1 @@
+The executable in the dist folder will run the python program baseline.py, allowing you to select a mapping workbook and will create a new excel file with the baseline data inside the dist folder.
