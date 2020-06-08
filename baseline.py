@@ -35,8 +35,7 @@ for index, row in data.iterrows():
 for index, row in data.iterrows():
 	base = row['Baseline_Start']
 	start = row['Start_Date_(Before_CPDs)']
-	days = (base - start).days
-	if not pd.isnull(base) and days > 0:
+	if not pd.isnull(base) and (base - start).days > 0:
 		late.append((row['ACIO'], row['Application'], days))
 
 
